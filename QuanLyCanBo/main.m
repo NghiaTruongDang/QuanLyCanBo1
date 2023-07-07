@@ -6,12 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "CanBo.h"
+#include "GiangVien.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        CanBo *canbo=[[CanBo alloc] init];
-        [canbo Nhapten];
-        NSLog(@"adf ",[canbo hoten])
+        GiangVien *gv=[[GiangVien alloc] init];
+        [gv Nhapten];
+        int l= [gv TinhLuong];
+        NSLog(@"luong %d",l);
     }
     return 0;
 }

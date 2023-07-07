@@ -10,7 +10,7 @@
 @implementation GiangVien
 -(id)init{
     if(self=[super init]){
-        canbo=[[CanBo alloc] init];
+        //canbo=[[CanBo alloc] init];
     }
     return  self;
 }
@@ -41,7 +41,7 @@
                 NSLog(@"Ban chon sai. Chon lai nhe");
                 break;
         }
-    }while(chon>0&&chon<4);
+    }while(chon==0&&chon>3);
     NSLog(@"Nhap so tiet day: ");
     scanf("%d",&sotietday);
 }
@@ -50,7 +50,7 @@
     NSLog(@"Trinh do: %@ -- Phu Cap: %d -- So tiet day: %d ",trinhdo,phucap,sotietday);
 }
 -(int) TinhLuong{
-    return canbo.
+    return [canbo getHesoluong]*730+phucap+sotietday*45;
 }
 -(int)getID{
     return  1;

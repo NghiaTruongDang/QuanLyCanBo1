@@ -13,12 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 {
     NSString *Hoten;
     int PhuCap;
-    int *HeSoLuong;
+    int HeSoLuong;
 }
 -(void)Nhapten;
 -(void)XuatTen;
 -(void)TinhLuong;
 -(int)getID;
+-(int)getHesoluong;
 @end
 
 NS_ASSUME_NONNULL_END

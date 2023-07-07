@@ -22,6 +22,9 @@
 -(int)getID{
     return 0;
 }
+-(int)getHesoluong{
+    return  HeSoLuong;
+}
 -(void)TinhLuong{
     
 }
